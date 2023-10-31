@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/7821157037.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      type="text/javascript"
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Images/icon-1.ico" type="image/x-icon" />
+
+    <title>Quadratix</title>
+  </head>
+  <body
+    class="overflow-x-hidden"
+    style="background-image: url(Images/bg-3.jpg); backdrop-filter: blur(4px)"
+  >
+    <!-- text-[#999999] -->
+    <section
+      id="container-main"
+      style="opacity: 30"
+      class="text-[rgb(224,219,219)] text-lg"
+    >
+      <!-- NAVBAR -->
+      <section
+        style="
+          background-image: url(Images/bg-3.jpg);
+          backdrop-filter: blur(10px);
+        "
+        class="bg-top w-full h-[100px] flex justify-between items-center px-6 text-white"
+      >
+        <div>
+          <img
+            class="w-40 hover:w-52 transition-transform transform duration-300 ease-in-out"
+            src="https://see.fontimg.com/api/renderfont4/BPen/eyJyIjoiZnMiLCJoIjo2MCwidyI6MTAwMCwiZnMiOjYwLCJmZ2MiOiIjQzZCMUIxIiwiYmdjIjoiI0M2MkIyQiIsInQiOjF9/UXVhZHJhdGl4/new-walt-disney-font-regular.png"
+            alt=""
+          />
+        </div>
+        <div class="mr-8 md:block lg:block sm:hidden">
+          <ul class="flex space-x-6">
+            <a href=""><li>Home</li></a>
+            <a href="#formulas"><li>Formula</li></a>
+          </ul>
+        </div>
+      </section>
+
+      <!-- HERO -->
+      <!-- <section id="equation" class="mt-32" > -->
+      <div class="flex justify-between md:flex-row flex-col items-center my-7">
+        <!-- left div for equation and solution -->
+        <div class="w-full font-serif m-4 py-8 px-8">
+          <!-- Title-->
+          <h1 class="text-[#FF4C4C] text-5xl">Solve Quadratic</h1>
+          <h1 class="text-[#999999] text-5xl">
+            <span id="animation-text">Equation Effortlessly</span>
+          </h1>
+          <!-- <h1 class="text-[#999999] lg:text-5xl md:text-5xl sm:text-5xl">
+            Equation Effortlessly
+          </h1> -->
+          <!-- text-[#cac3c3] -->
+          <!--  -->
+          <p class="mt-4 text-lg">
+            Get accurate solution for quadratic equations instantly with our
+            <br />
+            advanced calculator
+          </p>
+
+          <!-- Intructing for data -->
+          <h1 class="mt-8">
+            Let us assist you in finding solutions for equations in the format
+            <strong><em>'ax^2 + bx + c = 0'.</em></strong>
+          </h1>
+          <p class="">
+            Simply provide the values for 'a,' 'b,' and 'c' in the fields below:
+          </p>
+          <h1 class="text-sm mt-2 font-sans">
+            Example: 4x <sup>2</sup> - 6x + 2 = 0
+          </h1>
+          <br />
+
+          <h1 class="text-red-600 font-serif font-bold">
+            Enter the value of a, b and c
+          </h1>
+          <!-- input bar -->
+
+          <div class="text-xl mt-4">
+            <input
+              type="tel"
+              name="a"
+              id="a"
+              placeholder="a"
+              class="coffecient-1 pl-4 bg-transparent border-b-2 w-12"
+            />
+            <label for="a">x <sup>2</sup> + </label>
+            <input
+              type="tel"
+              name="b"
+              id="b"
+              placeholder="b"
+              class="coffecient-2 pl-4 bg-transparent border-b-2 w-12"
+            />
+            <label for="b">x + </label>
+            <input
+              type="tel"
+              name="c"
+              id="c"
+              placeholder="c"
+              class="coffecient-3 pl-4 bg-transparent border-b-2 w-12"
+            />
+            <label for="a"></label>
+            <label for="">= 0</label>
+
+            <br />
+            <button
+              id="btn"
+              class="mt-4 mx-6 text-base border-[1px] px-4 py-1 rounded-md hover:bg-gray-700 font-semibold"
+            >
+              Answer
+            </button>
+
+            <br />
+
+            <h1
+              class="text-slate-50 solution-render font-sans mt-6 text-xl"
+            ></h1>
+          </div>
+        </div>
+
+        <!-- Right div for advertisement -->
+        <div class="lg:mr-24 md:mr-16 w-[350px] px-4 py-4 border-2">
+          <h1>Advertisement</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ex
+            eveniet quo sequi similique excepturi, dicta eius voluptatum, velit
+            repudiandae dolore? Rerum a quia nihil commodi, sed totam voluptas
+            officia.
+          </p>
+        </div>
+      </div>
+      <!-- </section> -->
+
+      <!-- What is quadratic -->
+      <section class="flex md:flex-row flex-col items-center w-full">
+        <section id="what" class="mt-16 px-12 py-4">
+          <h1 class="text-4xl py-2 text-[#FF4C4C] font-semibold font-serif">
+            What is Quadratic?
+          </h1>
+          <h1 class="text-justify">
+            Quadratics can be defined as a polynomial equation of a second
+            degree, which implies that it comprises a minimum of one term that
+            is squared. It is also called quadratic equations. The general form
+            of the quadratic equation is: ax² + bx + c = 0 where x is an unknown
+            variable and a, b, c are numerical coefficients. For example, x² +
+            2x +1 is a quadratic or quadratic equation. Here, a ≠ 0 because if
+            it equals zero then the equation will not remain quadratic anymore
+            and it will become a linear equation, such as: bx+c=0 Thus, this
+            equation cannot be called a quadratic equation.The terms a, b and c
+            are also called quadratic coefficients. The solutions to the
+            quadratic equation are the values of the unknown variable x, which
+            satisfy the equation. These solutions are called roots or zeros of
+            quadratic equations. The roots of any polynomial are the solutions
+            for the given equation.
+          </h1>
+        </section>
+        <section class="mt-16 py-4">
+          <div
+            class="lg:mr-24 md:mr-16 lg:mt-8 w-[300px] px-4 py-4 border-2 sm:-mt-12"
+          >
+            <h1>Advertisement</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ex
+              eveniet quo sequi similique excepturi, dicta eius voluptatum,
+              velit repudiandae dolore? Rerum a quia nihil commodi, sed totam
+              voluptas officia.
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <!-- How -->
+      <section id="how" class="mt-16 rounded px-12 py-4 text-justify">
+        <div>
+          <h1 class="text-4xl py-2 text-[#FF4C4C] font-semibold font-serif">
+            How to solve Quadratic?
+          </h1>
+          <h1 class="">
+            Quadratic equations are a fundamental part of algebra and have many
+            real-world applications. <br />
+            They are equations of the form:
+            <strong> ax<sup>2</sup> + bx+c=0</strong>
+          </h1>
+          <h1>
+            Where, <br />
+            a, b, and c are constants, <br />
+            x is the variable we want to solve for. <br />
+          </h1>
+          <br />
+          <ul class="list-decimal px-4">
+            <li>
+              <h1 class="text-[#b65656] font-serif text-xl font-bold">
+                Identify the Coefficients:
+              </h1>
+              <br />
+              <h1>
+                Before we can solve the quadratic equation, we need to identify
+                the values of <strong>a, b and c</strong>. <br />
+                These coefficients will determine our approach to solving the
+                equation.
+                <!-- The discriminant, denoted by Δ, is a key value that helps us
+                determine the nature of the solutions: -->
+              </h1>
+              <ul class="list-disc px-2 mt-2">
+                <li><em>a: Coefficient of x<sup>2</sup>.</em></li>
+                <li><em>b: Coefficient of x.</em></li>
+                <li><em>c: Constant.</em></li>
+              </ul>
+            </li>
+            <br />
+            <li>
+              <h1 class="text-[#b65656] font-serif text-xl font-bold text-left">
+                Calculate the Discriminant:
+              </h1>
+              <br />
+              <h1>
+                The discriminant, denoted by Δ, is a key value that helps us
+                determine the nature of the solutions: <br />
+                Δ = b <sup>2</sup> - 4ac <br />
+                <br />
+                The discriminant can be one of three types: <br />
+              </h1>
+              <ul class="list-disc px-2 mt-2">
+                <li>Δ > 0 : Two distinct real solutions.</li>
+                <li>Δ = 0 : One real solution (a repeated root).</li>
+                <li>Δ &lt; 0 : No real solutions (complex roots).</li>
+              </ul>
+            </li>
+            <br />
+            <li>
+              <h1
+                id="formulas"
+                class="text-[#b65656] font-serif text-xl font-bold text-left"
+              >
+                Apply the Quadratic Formula:
+              </h1>
+              <br />
+
+              <h1>The quadratic formula is:</h1>
+              <h1 class="font-bold text-2xl mt-2">
+                \( x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \)
+              </h1>
+              <br />
+              <h1>
+                To find the solutions for x, we can use the quadratic formula:
+                <br />
+                <ul class="list-disc px-2 mt-2">
+                  <li>
+                    Δ > 0, there are two real solutions. The ± sign indicates
+                    that there are two solutions, one using the plus sign and
+                    the other using the minus sign.
+                  </li>
+                  <li>Δ = 0, there's one real solution (a repeated root).</li>
+                  <li>
+                    Δ &lt; 0, there are no real solutions, but there are complex
+                    roots.
+                  </li>
+                </ul>
+              </h1>
+            </li>
+            <br />
+            <li>
+              <h1 class="text-[#b65656] font-serif text-xl font-bold">
+                Interpret the Solutions:
+              </h1>
+              <br />
+
+              <h1>
+                Once you've applied the quadratic formula and obtained the
+                values of � x, you should interpret the solutions in the context
+                of the problem you are solving. Real-world applications can
+                range from physics and engineering to finance and optimization.
+              </h1>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+    <!-- footer -->
+
+    <section
+      id="footer"
+      class="mt-16 px-4 py-4 text-[#b65656] flex justify-center"
+    >
+      <p>copyright @2023</p>
+    </section>
+  </body>
+  <script type="module" src="guide.js"></script>
+</html>
